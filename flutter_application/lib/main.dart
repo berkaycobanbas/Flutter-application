@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+//widget'ların hepsi material kütüphanesinden gelir
 
 // main, her zaman olmak zorundadır!
 void main() {
@@ -23,17 +24,41 @@ class MyApp extends StatelessWidget {
 // eğer StatelessWidget sınıfını extends ediyorsak, override methodu eklemek zorundayız
   @override
   Widget build(BuildContext context) {
+    //context, sayfa hakkında bilgi verir
     // Widget tipinde, build adında bir fonksiyon
+
     return MaterialApp(
       // MaterialApp, bir widget
-      title: 'Flutter Demo',
+
+      // title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
+
+      //tüm uygulamanın genel temasını ayarlamak için theme parametresi
+      theme: ThemeData(primarySwatch: Colors.green),
+
       home: Scaffold(
-        body: Container(),
+        //appBar => kafa
+        appBar: AppBar(
+          title: const Text("İlk uygulamam"),
+        ),
+        // bottom => alt
+        // navigation => yönlendirme
+        // bar =>  item
+        // bottomNavigationBar: BottomNavigationBar(
+        //   items: [],
+        // ),
+        body: const Center(
+          child: Text("Hoş geldiniz"),
+        ),
+
+        //özelleştirilmiş buton widgetıdır
+        floatingActionButton: FloatingActionButton(
+          onPressed: () {},
+        ),
       ),
+      //Center widget'ı ortalar, bir tane widget alır.
+      // child ise bir, children alırsa birden fazla widget alır.
+      //Scaffold widget'ı beyaz sayfa
     );
   }
 }
