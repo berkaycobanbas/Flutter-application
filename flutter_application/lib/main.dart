@@ -29,6 +29,7 @@ class MyApp extends StatelessWidget {
 
     return MaterialApp(
       // MaterialApp, bir widget
+      //uygulamamız için gerekli malzemeler bulunur
 
       // title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
@@ -37,9 +38,12 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(primarySwatch: Colors.green),
 
       home: Scaffold(
+        //Scaffold widget'ı beyaz sayfa
+
         //appBar => kafa
         appBar: AppBar(
           title: const Text("İlk uygulamam"),
+          //title => başlık
         ),
         // bottom => alt
         // navigation => yönlendirme
@@ -48,17 +52,23 @@ class MyApp extends StatelessWidget {
         //   items: [],
         // ),
         body: const Center(
+          //Center widget'ı ortalar, bir tane widget alır.
+          // child ise bir, children alırsa birden fazla widget alır.
           child: Text("Hoş geldiniz"),
+          //Text widget'ı yazılar içindir
         ),
 
-        //özelleştirilmiş buton widgetıdır
+        //özelleştirilmiş buton widget'ıdır
         floatingActionButton: FloatingActionButton(
-          onPressed: () {},
+          //tıklama parametresi zorunludur
+          onPressed: () {
+            print("butondayım");
+          },
+          //içine alacak widget için child parametresi
+          child: Icon(Icons.add_a_photo),
+          //icon için Icon widget'ı
         ),
       ),
-      //Center widget'ı ortalar, bir tane widget alır.
-      // child ise bir, children alırsa birden fazla widget alır.
-      //Scaffold widget'ı beyaz sayfa
     );
   }
 }
