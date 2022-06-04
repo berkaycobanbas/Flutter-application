@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application/pages/buttons_example.dart';
 import 'package:flutter_application/pages/column_example.dart';
 import 'package:flutter_application/pages/container_example.dart';
+import 'package:flutter_application/pages/listview_example.dart';
 import 'package:flutter_application/pages/padding_example.dart';
 import 'package:flutter_application/pages/row_example.dart';
 //widget'ların hepsi material kütüphanesinden gelir
@@ -8,7 +10,7 @@ import 'package:flutter_application/pages/row_example.dart';
 // main, her zaman olmak zorundadır!
 void main() {
   // runApp, uygulamayı ayağa kaldırır
-  runApp(const PaddingExample());
+  runApp(const ButtonsExample());
   // MyApp sınıfını çağırır
 }
 
