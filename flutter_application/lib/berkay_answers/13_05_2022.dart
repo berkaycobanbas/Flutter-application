@@ -30,6 +30,18 @@ vs…
 state(durum), bir bileşenin(component) dinamik verilerini depolayan ve bileşenin davranışını belirleyen bir JavaScript nesnesidir. state dinamik olduğu için, bir bileşenin oluşturmalar arasında değişen bilgileri takip etmesini ve dinamik ve etkileşimli olmasını sağlar.
 
 state eklenirken, genellikle bir sınıf bileşenine veya işlevsel bir bileşene eklenerek yapılır.
+
+State, oluşturduğumuz uygulamanın durumu olarak tanımlanabilir. Ekranın anlık görüntüsüdür. Bir ekranın görüntüsünü yani State’i etkileyen birçok widget vardır. Örnek vermek gerekirse: yazılar, resimler yine en basit örnekleridir. State değiştiğinde, ekrandaki görüntü de değişir. O yüzden, kullandığımız widgetlara göre state seçimini doğru kulanmak önemlidir.
+
 */ 
 
 // Stateless ve Stateful farkı nedir ? 
+
+/* Stateless=durumsuz ekran yapılarında yani herhangi bir aktiflik yoksa sabit bir görünüm dönüyorsa stateless widget kullanılır
+
+
+statefull = yapısı değişiklik gösteren durumlarda kullanılır. Yani ekranda değişime uğrayan bir yapı varsa statefull widget kullanılır */
+
+
+// override method nedir ? 
+
